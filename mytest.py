@@ -1,4 +1,12 @@
 __author__ = 'branh0913'
 
-print "uninspired hello world program to demostrate a check in"
+import pyexcel
+import pyexcel_xls
 
+
+myvar = pyexcel.load("Report_PatientAccountLedger-148786.xls")
+
+myrows = myvar.rows()
+
+for i in myrows:
+    print(i)
